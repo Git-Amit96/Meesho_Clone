@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
 }
-.container{
+.header{
     width: 100%;
     height: 130px;
     border-bottom: 2px solid #a19e9e;
@@ -139,4 +139,87 @@
 .hove:hover{
     border-bottom: 3px solid rgb(164, 31, 164);
     color: rgb(164, 31, 164);
+}
+
+.container{
+    margin: 50px auto 0px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    width: 70%;
+    
+    height: 300vh;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    row-gap: 20px;
+}
+.banner-container{
+    width: 100%; 
+    /* border: 2px solid green; */
+    box-sizing: border-box;
+}
+.banner1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+    display: flex;
+    /* border: 2px solid red; */
+    background-color: #f8f8ff;
+}
+.banner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2; 
+}
+#banner-items2{
+    width: 50%;
+    height: 100%;
+    background-image: url(meesho_banner1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#banner-items1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px 40px;
+    font-size: 22px;
+    font-family: sans-serif
+
+}
+.banner-list{
+    display: flex;
+    margin-top: 30px;
+    height: 55px;
+    
+    gap: 50px;
+    width: 80%;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #454244;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+}
+#banner-btn>button{
+    margin: 40px 0px 0px 0px;
+    width: 20vw;
+    height: 45px;
+    font-size: 17px;
+    background-color: #9f2089;
+    color: white;
+   letter-spacing: 1px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-family: sans-serif;
 }
