@@ -22,7 +22,6 @@ header{
     height: 80px;
     box-sizing: border-box;
     border-bottom: 1px solid rgb(174, 172, 172);
-    
     transition: 0.1s ease;
     background: white;
     
